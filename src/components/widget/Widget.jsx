@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
+import { fakeApiRequest } from '../../services/fakeApi'
+import { useTranslation } from '../../hooks/useTranslation'
 import Spinner from '../spinner/Spinner'
-import {fakeApiRequest} from '../../services/fakeApi'
-import { useRef } from 'react'
-import {useTranslation} from '../../hooks/useTranslation'
 
 const Widget = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -44,7 +43,6 @@ const Widget = () => {
       }
   }, [isLoading])
   
-
   return (
     <div>Widget
       <div className="spinner">

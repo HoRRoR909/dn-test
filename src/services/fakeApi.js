@@ -10,8 +10,3 @@ export function fakeApiRequest(options = {}) {
     }, timeout)
   })
 }
-
-export async function fakeTranslationApi() {
-
-  return {}
-}

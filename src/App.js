@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {initTranslation} from './hooks/useTranslation';
+import Homepage from './pages/homepage/Homepage';
 
-function App() {
+const messages = {
+  'Loading.First': 'Виджет грузится',
+  'Loading.Second': 'Виджет ещё грузится',
+  'Loading.Third': 'Загрузка идёт дольше чем обычно. Пожалуйста, подождите',
+  'Error.Timeout': 'Ошибка при загрузке. Пожалуйста -- обновите окно',
+  'Success.LoadingFinished': 'Виджет загружен!' 
+}
+
+initTranslation(messages)
+
+function App() {  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Homepage />
   );
 }
 

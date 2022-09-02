@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dn-test/static/css/main.800bd247.css",
+    "main.js": "/dn-test/static/js/main.b44475d8.js",
+    "index.html": "/dn-test/index.html",
+    "main.800bd247.css.map": "/dn-test/static/css/main.800bd247.css.map",
+    "main.b44475d8.js.map": "/dn-test/static/js/main.b44475d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.800bd247.css",
+    "static/js/main.b44475d8.js"
+  ]
+}
